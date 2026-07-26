@@ -285,6 +285,7 @@
 
 - 小說檔案放在 `chapters/` 目錄。
 - 沿用 `chapters/novel-chapter-01.md` 格式，後續命名為 `chapters/novel-chapter-02.md`、`chapters/novel-chapter-03.md`。
+- 史實線從第三十三回平行分流，檔名使用 `chapters/novel-history-chapter-33.md` 起，正文回號仍沿用「第三十三回」而不接續真結局線編號。
 - 檔名使用英文與兩位數章號，正文回目仍使用中文「回」。
 - 新章開頭要檢查上一章最後三至五段，保持時間、地點、人物狀態與懸念連續。
 - 新章完成後，如發現前章的選項造成連續性錯誤，先報告衝突，再做最小修正；不得默默重寫大量既有內容。

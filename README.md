@@ -22,7 +22,7 @@
 - **真結局線（幻想路線）**：姜維派兵防守陰平，成功識破鄧艾的奇襲，故事由此進入大規模架空歷史。
 - **史實線（歷史路線）**：姜維不派兵防守陰平，鄧艾成功偷渡陰平，故事進入蜀漢滅亡與姜維復國失敗的歷史結局。
 
-目前第一回至第五十七回已完成共通線及真結局線。史實線尚待小說化。
+目前共通線、真結局線與史實線均已完成小說化。
 
 > 以下目錄包含路線分歧與章回標題，可能透露後續劇情。
 
@@ -99,15 +99,20 @@
 
 第三十二回後，姜維不派兵防守陰平。鄧艾成功翻越陰平小路，故事進入蜀漢滅亡、姜維假意投降鍾會並企圖恢復漢室的歷史路線。
 
-**目前狀態：尚未小說化。**
-
-預定取材範圍：
-
-- [`ExtractedScripts/R_32.txt`](ExtractedScripts/R_32.txt)：不派兵防守陰平分支
-- [`ExtractedScripts/S_32.txt`](ExtractedScripts/S_32.txt)：綿竹之戰
-- [`ExtractedScripts/R_33.txt`](ExtractedScripts/R_33.txt)：劉禪投降與姜維假降
-- [`ExtractedScripts/S_33.txt`](ExtractedScripts/S_33.txt)：成都之亂
-- [`ExtractedScripts/R_58.txt`](ExtractedScripts/R_58.txt)：「孤臣之死」尾聲
+33. [第三十三回　疑徑不分兵守險　孤軍冒死越陰平](chapters/novel-history-chapter-33.md)
+34. [第三十四回　江油失守驚蜀主　成都點將起孤軍](chapters/novel-history-chapter-34.md)
+35. [第三十五回　黃崇苦諫留危堞　諸葛父子殉綿竹](chapters/novel-history-chapter-35.md)
+36. [第三十六回　譙周陳策降曹魏　北地哭廟殉漢家](chapters/novel-history-chapter-36.md)
+37. [第三十七回　劍門棄守奔巴東　郪縣奉詔圖復國](chapters/novel-history-chapter-37.md)
+38. [第三十八回　伯約忍辱降鍾會　士季矯書陷鄧艾](chapters/novel-history-chapter-38.md)
+39. [第三十九回　姜鍾同謀爭天下　魏臣暗布破局棋](chapters/novel-history-chapter-39.md)
+40. [第四十回　假詔逼將囚群帥　胡淵舉兵亂成都](chapters/novel-history-chapter-40.md)
+41. [第四十一回　伯恭力戰酬漢室　伯約孤忠死成都](chapters/novel-history-chapter-41.md)
+42. [第四十二回　袁綝讀札明身世　楊蘭稱妻赴亂兵](chapters/novel-history-chapter-42.md)
+43. [第四十三回　衛瓘借刀除鄧艾　羅憲孤城拒東吳](chapters/novel-history-chapter-43.md)
+44. [第四十四回　南中忍辱存漢脈　長安論功晉王成](chapters/novel-history-chapter-44.md)
+45. [第四十五回　甯隨東吳扶孫皓　句扶羯帳種新仇](chapters/novel-history-chapter-45.md)
+46. [第四十六回　魏祚禪晉歸一統　故人聚墓哭孤臣](chapters/novel-history-chapter-46.md)
 
 ## 改寫特色
 
@@ -119,7 +124,7 @@
 
 ## 專案資料
 
-- [`chapters/`](chapters/)：共通線與真結局線小說章節。
+- [`chapters/`](chapters/)：共通線、真結局線與史實線小說章節。
 - [`ExtractedScripts/`](ExtractedScripts/)：遊戲劇本文字匯出檔。
 - [`story-routes-and-branches.md`](story-routes-and-branches.md)：劇情路線、分支與尾聲分析。
 - [`AGENTS.md`](AGENTS.md)：小說改寫、台詞保留與品質驗證規範。
