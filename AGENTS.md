@@ -29,7 +29,7 @@
 
 ### 3. 既有小說
 
-- `novel-chapter-01.md` 是文體、章節結構、對話呈現和改寫密度的基準範例。
+- `chapters/novel-chapter-01.md` 是文體、章節結構、對話呈現和改寫密度的基準範例。
 - 續寫時要延續既有稱謂、人物語氣、標點、敘事距離與 Markdown 格式。
 - 若既有小說與原始台詞不一致，應修正小說，不得反過來修改原始文本。
 
@@ -283,8 +283,8 @@
 
 ## 十、檔案命名與章節連續性
 
-- 小說檔案放在專案根目錄。
-- 沿用 `novel-chapter-01.md` 格式，後續命名為 `novel-chapter-02.md`、`novel-chapter-03.md`。
+- 小說檔案放在 `chapters/` 目錄。
+- 沿用 `chapters/novel-chapter-01.md` 格式，後續命名為 `chapters/novel-chapter-02.md`、`chapters/novel-chapter-03.md`。
 - 檔名使用英文與兩位數章號，正文回目仍使用中文「回」。
 - 新章開頭要檢查上一章最後三至五段，保持時間、地點、人物狀態與懸念連續。
 - 新章完成後，如發現前章的選項造成連續性錯誤，先報告衝突，再做最小修正；不得默默重寫大量既有內容。
@@ -347,7 +347,7 @@ Matched N/N selected dialogue lines
 執行：
 
 ```bash
-git diff --check -- "novel-chapter-XX.md"
+git diff --check -- "chapters/novel-chapter-XX.md"
 ```
 
 確認 Markdown 無多餘行尾空白、衝突標記或格式錯誤。
