@@ -127,7 +127,8 @@
 - [`chapters/`](chapters/)：共通線、真結局線與史實線小說章節。
 - [`ExtractedScripts/`](ExtractedScripts/)：遊戲劇本文字匯出檔。
 - [`story-routes-and-branches.md`](story-routes-and-branches.md)：劇情路線、分支與尾聲分析。
-- [`AGENTS.md`](AGENTS.md)：小說改寫、台詞保留與品質驗證規範。
+- [`AGENTS.md`](AGENTS.md)：小說工作規範的強制載入入口。
+- [`.opencode/skills/jiangwei-novel/SKILL.md`](.opencode/skills/jiangwei-novel/SKILL.md)：小說改寫、台詞保留、分支管理與品質驗證工作流。
 
 ## 原作與參考資料
 
