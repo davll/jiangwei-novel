@@ -5,8 +5,8 @@
     "Noto Serif CJK TC", serif;
   --vs-font-size-on-print: 75%;
   --vs-line-height: 1.8;
-  --vs-page--margin-top: 12mm;
-  --vs-page--margin-bottom: 12mm;
+  --vs-page--margin-top: 15mm;
+  --vs-page--margin-bottom: 9mm;
   --vs-page--margin-inner: 14mm;
   --vs-page--margin-outer: 10mm;
   --vs-page--mbox-font-family: "PingFang TC", sans-serif;
