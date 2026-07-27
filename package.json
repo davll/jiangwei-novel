@@ -1,0 +1,15 @@
+{
+  "name": "jiangwei-novel",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "book:prepare": "node book/scripts/prepare-chapter.mjs",
+    "book:build": "vivliostyle build -c book/vivliostyle.config.js",
+    "book:preview": "vivliostyle preview -c book/vivliostyle.config.js",
+    "book:sample": "npm run book:prepare && npm run book:build"
+  },
+  "devDependencies": {
+    "@vivliostyle/cli": "11.1.0",
+    "@vivliostyle/theme-bunko": "2.0.1"
+  }
+}

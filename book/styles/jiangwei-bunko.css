@@ -1,0 +1,78 @@
+:root {
+  --vs-theme--num-of-line: 14;
+  --vs-theme--num-of-character: 39;
+  --vs-font-family: "LiSong Pro", "Apple LiSung", "Songti TC",
+    "Noto Serif CJK TC", serif;
+  --vs-font-size-on-print: 75%;
+  --vs-line-height: 1.8;
+  --vs-page--margin-top: 12mm;
+  --vs-page--margin-bottom: 12mm;
+  --vs-page--margin-inner: 14mm;
+  --vs-page--margin-outer: 10mm;
+  --vs-page--mbox-font-family: "PingFang TC", sans-serif;
+  --vs-page--mbox-font-size: 6.5pt;
+  --vs-theme--page-top-left-content: counter(page) "　" env(doc-title);
+  --vs-theme--page-top-right-content: counter(page);
+  --vs--p-text-spacing: normal;
+  --vs--p-hanging-punctuation: first allow-end;
+  --vs--p-text-align: justify;
+  --vs--p-text-indent: 1em;
+}
+
+html {
+  line-break: strict;
+  text-orientation: mixed;
+}
+
+body {
+  font-feature-settings: "vert" 1, "vrt2" 1;
+}
+
+h1,
+h2 {
+  font-family: "BiauKaiTC", "BiauKaiHK", "Kaiti TC", serif;
+  font-weight: 400;
+}
+
+h1 {
+  font-size: 15pt;
+  letter-spacing: 0.08em;
+  line-height: 3.5rem;
+  margin-block: 0 1.5rem;
+  text-indent: 0;
+}
+
+h2 {
+  font-size: 11pt;
+  letter-spacing: 0.08em;
+  line-height: 3rem;
+  margin-block: 1.5rem 0.75rem;
+  text-indent: 2em;
+}
+
+p {
+  margin: 0;
+}
+
+blockquote {
+  border: 0;
+  break-inside: avoid;
+  color: inherit;
+  font-family: "BiauKaiTC", "BiauKaiHK", "Kaiti TC", serif;
+  margin-block: 1.5rem 2rem;
+  margin-inline: 0;
+  padding: 0;
+}
+
+blockquote p {
+  letter-spacing: 0.06em;
+  text-indent: 0;
+}
+
+h1 + blockquote {
+  margin-block-start: 0;
+}
+
+@page :nth(1) {
+  --vs-page--mbox-visibility: hidden;
+}
