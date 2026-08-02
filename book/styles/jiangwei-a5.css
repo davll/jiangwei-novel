@@ -1,18 +1,18 @@
 :root {
-  --vs-theme--num-of-line: 14;
-  --vs-theme--num-of-character: 39;
+  --vs-theme--num-of-line: 17;
+  --vs-theme--num-of-character: 46;
   --vs-font-family: "LiSong Pro", "Apple LiSung", "Songti TC",
-    "Noto Serif CJK TC", serif;
-  --vs-font-size-on-print: 75%;
+    "Noto Serif CJK TC", "PMingLiU", "MingLiU", serif;
+  --vs-font-size-on-print: 87.5%;
   --vs-line-height: 1.8;
-  --vs-page--margin-top: 15mm;
-  --vs-page--margin-bottom: 9mm;
-  --vs-page--margin-inner: 14mm;
-  --vs-page--margin-outer: 10mm;
+  --vs-page--margin-top: 22mm;
+  --vs-page--margin-bottom: 17.5mm;
+  --vs-page--margin-inner: 19mm;
+  --vs-page--margin-outer: 15.5mm;
   --vs-page--mbox-font-family: "PingFang TC", sans-serif;
-  --vs-page--mbox-font-size: 6.5pt;
+  --vs-page--mbox-font-size: 7.5pt;
   --vs-theme--page-top-left-content: counter(page) "　" env(doc-title);
-  --vs-theme--page-top-right-content: counter(page);
+  --vs-theme--page-top-right-content: counter(page) "　" env(doc-title);
   --vs--p-text-spacing: normal;
   --vs--p-hanging-punctuation: first allow-end;
   --vs--p-text-align: justify;
@@ -29,24 +29,25 @@ body {
 }
 
 h1,
-h2 {
-  font-family: "BiauKaiTC", "BiauKaiHK", "Kaiti TC", serif;
+h2,
+blockquote {
+  font-family: "BiauKaiTC", "BiauKaiHK", "Kaiti TC", "DFKai-SB", serif;
   font-weight: 400;
 }
 
 h1 {
-  font-size: 15pt;
-  letter-spacing: 0.08em;
-  line-height: 3.5rem;
-  margin-block: 0 1.5rem;
+  font-size: 18pt;
+  letter-spacing: 0.1em;
+  line-height: 4rem;
+  margin-block: 0 2rem;
   text-indent: 0;
 }
 
 h2 {
-  font-size: 11pt;
+  font-size: 13pt;
   letter-spacing: 0.08em;
-  line-height: 3rem;
-  margin-block: 1.5rem 0.75rem;
+  line-height: 3.5rem;
+  margin-block: 2rem 1rem;
   text-indent: 2em;
 }
 
@@ -58,19 +59,23 @@ blockquote {
   border: 0;
   break-inside: avoid;
   color: inherit;
-  font-family: "BiauKaiTC", "BiauKaiHK", "Kaiti TC", serif;
-  margin-block: 1.5rem 2rem;
+  font-size: 11pt;
+  margin-block: 2rem 2.5rem;
   margin-inline: 0;
   padding: 0;
 }
 
 blockquote p {
-  letter-spacing: 0.06em;
+  letter-spacing: 0.08em;
   text-indent: 0;
 }
 
 h1 + blockquote {
   margin-block-start: 0;
+}
+
+.upright {
+  text-orientation: upright;
 }
 
 @page :nth(1) {

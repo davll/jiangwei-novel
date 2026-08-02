@@ -4,7 +4,8 @@
   "type": "module",
   "scripts": {
     "book:prepare": "node book/scripts/prepare-chapters.mjs",
-    "book:build": "vivliostyle build -c book/vivliostyle.config.js",
+    "book:a5:build": "vivliostyle build -c book/vivliostyle.config.js",
+    "book:build": "npm run book:a5:build",
     "book:all": "BOOK_CLEAN_OUTPUT=1 npm run book:prepare && npm run book:build",
     "book:preview": "npm run book:prepare && BOOK_CHAPTER=novel-chapter-01 vivliostyle preview -c book/vivliostyle.config.js",
     "book:sample": "npm run book:prepare && BOOK_CHAPTER=novel-chapter-01 npm run book:build"

@@ -4,9 +4,9 @@ import { fileURLToPath } from "node:url";
 
 const scriptDir = dirname(fileURLToPath(import.meta.url));
 const rootDir = resolve(scriptDir, "../..");
-const sourceDir = resolve(rootDir, "chapters");
+const sourceDir = resolve(rootDir, process.env.BOOK_SOURCE_DIR || "chapters");
 const outputDir = resolve(rootDir, "book/build");
-const chapterPdfDir = resolve(rootDir, "book/output/chapters");
+const chapterPdfDir = resolve(rootDir, "book/output/a5");
 const chapterFilename = /^novel-(?:history-)?chapter-\d{2}\.md$/;
 const notesHeading = /^## 改寫註記\s*$/m;
 
@@ -38,6 +38,7 @@ for (const filename of chapterFiles) {
 
   let manuscript = source.slice(0, notesIndex).trimEnd();
   manuscript = manuscript.replace(/\n---\s*$/, "").trimEnd();
+  manuscript = manuscript.replaceAll("…", '<span class="upright">⋮</span>');
 
   const title = manuscript.match(/^#\s+(.+)$/m)?.[1];
   if (!title) {

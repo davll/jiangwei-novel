@@ -6,7 +6,7 @@ import { fileURLToPath } from "node:url";
 const bookDir = dirname(fileURLToPath(import.meta.url));
 const rootDir = resolve(bookDir, "..");
 const buildDir = resolve(bookDir, "build");
-const chapterFilename = /^novel-(?:history-)?chapter-\d{2}\.md$/;
+const chapterFilename = /^novel-(?:history-)?chapter-\d{2}(?:-[a-z0-9]+)*\.md$/;
 const selectedChapter = process.env.BOOK_CHAPTER;
 
 let chapterFiles = readdirSync(buildDir)
@@ -38,7 +38,7 @@ const tasks = chapterFiles.map((filename) => {
     title: `《三國志姜維傳》${title}`,
     language: "zh-Hant-TW",
     readingProgression: "rtl",
-    size: "105mm,148mm",
+    size: "148mm,210mm",
     entryContext: rootDir,
     entry: [
       {
@@ -50,13 +50,11 @@ const tasks = chapterFiles.map((filename) => {
     ],
     theme: [
       "@vivliostyle/theme-bunko",
-      resolve(bookDir, "styles/jiangwei-bunko.css"),
+      resolve(bookDir, "styles/jiangwei-a5.css"),
     ],
-    workspaceDir: resolve(bookDir, ".vivliostyle"),
+    workspaceDir: resolve(bookDir, ".vivliostyle-a5"),
     output: {
-      path: selectedChapter
-        ? resolve(bookDir, `output/${slug}-sample.pdf`)
-        : resolve(bookDir, `output/chapters/${slug}.pdf`),
+      path: resolve(bookDir, `output/a5/${slug}.pdf`),
       format: "pdf",
     },
     timeout: 300000,

@@ -1,5 +1,7 @@
 .DS_Store
 node_modules/
 book/.vivliostyle/
+book/.vivliostyle-a5/
 book/build/
 book/output/
+tmp/
